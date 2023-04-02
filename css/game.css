@@ -70,3 +70,18 @@ header {
   filter: saturate(0);
   opacity: 0.5;
 }
+
+.game-form {
+  padding-top: 24px;
+}
+
+.game-form button {
+  background-color: #ee665c;
+  padding: 15px;
+  border-radius: 8px;
+  color: #FFF;
+  cursor: pointer; 
+  font-size: 1em; 
+  max-width: 200px;
+  width: 100%;
+}

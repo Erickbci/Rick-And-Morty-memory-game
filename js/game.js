@@ -1,7 +1,8 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
-const form = document.querySelector('game-form');
+const form = document.querySelector('.game-form');
+const buttonReset = document.querySelector('.new-game-button');
 
 const characters = [
   'beth',
@@ -30,6 +31,7 @@ const checkEndGame = () => {
   if (disabledCards.length == 20) {
     clearInterval(this.loop)
     alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`)
+    localStorage.setItem('score', timer.innerHTML);
   } 
 }
 
@@ -109,10 +111,15 @@ const startTimer = () => {
 
 const submitForm = (event) => {
   event.preventDefault();
-  window.location = 'pages/ranking.html';
+  window.location = '../pages/ranking.html';
 }
 
-form.addEventListener('submit', submitForm);
+const resetGame = () => {
+  window.location = '../pages/game.html';
+}
+
+buttonReset.addEventListener('click', resetGame)
+// form.addEventListener('submit', submitForm);
 
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');
