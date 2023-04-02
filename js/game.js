@@ -1,6 +1,7 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
+const form = document.querySelector('game-form');
 
 const characters = [
   'beth',
@@ -105,6 +106,13 @@ const startTimer = () => {
     timer.innerHTML =  currentTime + 1;
   },1000)
 }
+
+const submitForm = (event) => {
+  event.preventDefault();
+  window.location = 'pages/ranking.html';
+}
+
+form.addEventListener('submit', submitForm);
 
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');
