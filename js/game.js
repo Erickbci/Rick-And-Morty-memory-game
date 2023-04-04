@@ -1,8 +1,8 @@
 const grid = document.querySelector('.grid');
 const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
-const form = document.querySelector('.game-form');
 const buttonReset = document.querySelector('.new-game-button');
+const buttonRanking = document.querySelector('.ranking-button');
 
 const characters = [
   'beth',
@@ -109,8 +109,7 @@ const startTimer = () => {
   },1000)
 }
 
-const submitForm = (event) => {
-  event.preventDefault();
+const routeRanking = () => {
   window.location = '../pages/ranking.html';
 }
 
@@ -118,8 +117,8 @@ const resetGame = () => {
   window.location = '../pages/game.html';
 }
 
-buttonReset.addEventListener('click', resetGame)
-// form.addEventListener('submit', submitForm);
+buttonReset.addEventListener('click', resetGame);
+buttonRanking.addEventListener('click', routeRanking);
 
 window.onload = () => {
   spanPlayer.innerHTML = localStorage.getItem('player');

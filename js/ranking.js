@@ -8,7 +8,7 @@ const returnGame = () => {
 
 window.onload = () => {
   spanPlayerNickname.innerHTML = localStorage.getItem('player');
-  spanPlayerScore.innerHTML = localStorage.getItem('score');
+  spanPlayerScore.innerHTML = localStorage.getItem('score')+'s';
 }
 
 button.addEventListener('click', returnGame);
