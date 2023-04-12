@@ -1,64 +1,95 @@
 .loading {
-    background: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  .loading label {
-    font-size: 24px;
-  }
-  
-  .centralize {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  button {
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  button:active {
-    opacity: 0.8;
-  }
-  
-  .clear {
-    background: transparent;
-    border: none;
-    color: white;
-  }
-  .clear:disabled {
-    background: transparent;
-    border: none;
-    color: rgb(15, 116, 55);
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  
-  .solid {
-    background: transparent;
-    border: none;
-    color: white;
-  }
-  
-  .solid:disabled {
-    background: transparent;
-    border: none;
-    color: rgb(15, 116, 55);
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  
-  .outline {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-  }
-  
-  .error {
-    color: red;
-    display: none;
-    font-weight: bold;
-  }
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loading label {
+  font-size: 24px;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input {
+  margin-top: 5px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #333;
+  /* font-size: 1em; */
+  width: 100%;
+  outline: none;
+}
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+  .login-header img {
+  width: 100px;
+} 
+
+ .login-header h1 {
+  /* color: #333; */
+  font-size: 1.5rem;
+} 
+
+button {
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  padding: 15px;
+  border-radius: 8px;
+  /* font-size: 1em;  */
+  max-width: 300px;
+  width: 100%;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.clear {
+  background-color: #ee665c;
+  border: none;
+  color: white;
+}
+.clear:disabled {
+  border: none;
+  color: #FFF;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.solid {
+  background-color: #ee665c;
+  border: none;
+  color: white;
+}
+
+.solid:disabled {
+  border: none;
+  color: #FFF;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.outline {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.error {
+  color: red;
+  display: none;
+  font-weight: bold;
+}
