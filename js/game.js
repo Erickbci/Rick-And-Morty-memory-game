@@ -109,11 +109,13 @@ const startTimer = () => {
   },1000)
 }
 
-const routeRanking = () => {
-  window.location = '../pages/ranking.html';
+const routeRanking = (event) => {
+  event.preventDefault();
+  window.location.href = '../pages/ranking.html';
 }
 
-const resetGame = () => {
+const resetGame = (event) => {
+  event.preventDefault();
   window.location = '../pages/game.html';
 }
 
