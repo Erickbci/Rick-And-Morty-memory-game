@@ -3,7 +3,7 @@ const spanPlayerScore = document.querySelector('.player-score');
 const button = document.querySelector('.back-button');
 
 const returnGame = () => {
-  window.location = '../pages/game.html'
+  window.location = '../game/game.html'
 }
 
 window.onload = () => {

@@ -80,7 +80,7 @@ const createCard = (character) => {
   const front = createElement('div', 'face front');
   const back = createElement('div', 'face back');
 
-  front.style.backgroundImage = `url('../images/${character}.png')`
+  front.style.backgroundImage = `url('../../images/${character}.png')`
 
   card.appendChild(front);
   card.appendChild(back);
@@ -111,12 +111,12 @@ const startTimer = () => {
 
 const routeRanking = (event) => {
   event.preventDefault();
-  window.location.href = '../pages/ranking.html';
+  window.location.href = '../../pages/ranking/ranking.html';
 }
 
 const resetGame = (event) => {
   event.preventDefault();
-  window.location = '../pages/game.html';
+  window.location.href = 'game.html';
 }
 
 buttonReset.addEventListener('click', resetGame);

@@ -14,7 +14,7 @@ function login(){
     form.email().value, form.password().value
   ).then(response => {
     hideLoading();
-    window.location.href = 'pages/game.html'
+    window.location.href = 'pages/game/game.html'
   }).catch(error => {
     hideLoading();
     alert(getErrorMessages(error))
@@ -29,7 +29,7 @@ function getErrorMessages(error){
 }
 
 function register(){
-  window.location.href = 'pages/register.html'
+  window.location.href = 'pages/register/register.html' 
 }
 
 function isEmailValid() {

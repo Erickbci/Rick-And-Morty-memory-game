@@ -6,7 +6,7 @@ main {
   width: 100%;
   min-height: 100vh;
   padding: 20px 20px 50px;
-  background-image: url('../images/bg.jpg');
+  background-image: url('../../images/bg.jpg');
   background-size: cover;
 }
 
@@ -62,7 +62,7 @@ header {
 }
 
 .back {
-  background-image: url('../images/back.png');
+  background-image: url('../../images/back.png');
   backface-visibility: hidden;
 }
 
