@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="register.css">
+    <script defer src="../../js/validations.js"></script>
+    <script defer src="register.js"></script>
     <title>Registrar | Memory Game</title>
 </head>
 <body class="centralize">
     <form>
         <div class="form-field">
             <div><label>Email</label></div>
-            <input class="login-input" type="email" placeholder="seu@email.com">
+            <input id="email" onchange="onChangeEmail()" class="login-input" type="email" placeholder="seu@email.com">
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
         </div>
         <div class="form-field">
             <div><label>Senha</label></div>
-            <input class="login-input" type="password" placeholder="Senha">
+            <input id="password" onchange="onChangePassword" class="login-input" type="password" placeholder="Senha">
+            <div class="error" id="password-required-error">Senha é obrigatória</div>
+            <div class="error" id="password-min-length-error">Senha deve conter pelo menos 6 caracteres</div>
         </div>
         <div class="form-field">
             <div><label>Confirmar Senha</label></div>
-            <input class="login-input" type="password" placeholder="Confirmar Senha">
+            <input class="login-input" type="password" placeholder="Confirmar Senha" id="confirmPassword" onchange="onChangeConfirmPassword()">
+            <div class="error" id="password-doesnt-match-error">Senha e Confirmar senha devem ser iguais</div>
         </div>
         <div>
-            <button type="button" class="solid">Registrar</button>
+            <button type="button" class="solid" disabled id="register-button">Registrar</button>
         </div>
         <div>
             <button type="button" class="clear">Login</button>
