@@ -3,17 +3,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     height: 100vh;
   }
-  
+
   form {
     width: 300px;
   }
-  
+
   input {
     border: none;
   }
-  
-  
+
+.form-field label {
+    padding: 10px;
+}
