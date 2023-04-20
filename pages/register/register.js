@@ -81,6 +81,10 @@ function isFormValid() {
     return true;
 }
 
+function goToLogin() {
+    window.location.href = '../../index.html';
+}
+
 const form = {
     confirmPassword: () => document.getElementById('confirmPassword'),
     confirmPasswordDoesntMatchError: () => document.getElementById('password-doesnt-match-error'),
