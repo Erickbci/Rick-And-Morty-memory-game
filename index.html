@@ -27,11 +27,11 @@
       </div>
 
       <input 
-      id="email" 
+      class="login-input"
       type="email" 
       name="email"
-      class="login-input" 
       placeholder="seu@email.com"
+      id="email" 
       onchange="onChangeEmail()"
       >
       <div class="error" id="email-required-error">Email é obrigatório</div>
@@ -42,30 +42,50 @@
         <label>Senha</label>
       </div>
       <input 
-      id="password" 
+      class="login-input"
       type="password" 
       name="password" 
-      class="login-input"
       placeholder="Senha"
+      id="password" 
       onchange="onChangePassword()"
       >
       <img 
       class="see-password-img" 
-      id="see-password-img"
       src="./images/olho-fechado.svg"
+      id="see-password-img"
       onclick="seePassword()"
       >
       <div class="error" id="password-required-error">Senha é obrigatória</div>
     </div>
     <div class="form-buttons">
       <div>
-        <button onclick="recoverPassword()" id="recover-password-button" type="button" class="clear" disabled>Recuperar senha</button>
+        <button
+        type="button" 
+        class="clear" 
+        id="recover-password-button" 
+        onclick="recoverPassword()" 
+        disabled
+        >
+        Recuperar senha</button>
         </div>
       <div>
-        <button onclick="login()" id="login-button" type="button" class="solid" disabled>Entrar</button>
+        <button 
+        type="button" 
+        class="solid" 
+        id="login-button" 
+        onclick="login()" 
+        disabled
+        >
+        Entrar</button>
       </div>
       <div>
-        <button onclick="register()" id="botao-login" type="button" class="outline">Registrar</button>
+        <button 
+        type="button" 
+        class="outline"
+        id="botao-login" 
+        onclick="register()" 
+        >
+        Registrar</button>
       </div>
     </div>
     
