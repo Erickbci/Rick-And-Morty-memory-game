@@ -38,6 +38,11 @@
     text-align: center;
   }
 
+  #turnPlayer {
+    display: block;
+    margin: 10px 0px;
+  }
+
   #gameBoard {
     background-color: #835AFD;
     display: grid;

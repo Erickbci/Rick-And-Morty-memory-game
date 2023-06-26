@@ -52,7 +52,7 @@ function handleWin(regions) {
         document.querySelector(`[data-region="${region}"]`).classList.add('win')
     })
     const playerName = document.getElementById(turnPlayer).value
-    document.querySelector('h2').innerHTML = `${playerName} venceu`
+    document.querySelector('h2').innerHTML = `<span id="turnPlayer">${playerName}</span> venceu`
 }
 
 function handleBoardClick(ev) {
