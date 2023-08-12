@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/reset.css">
+    <script defer src="home.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,6 +20,83 @@
         </div>
     </header>
 
+    <dialog>
+        <form class="form">
+            <div class="login-header">
+              <img src="./images/brain.png" alt="Brain Icon">
+              <h1>Memory Game</h1>
+            </div>
+            <div class="form-field">
+        
+              <div>
+                <label>Email</label>
+              </div>
+        
+              <input 
+              class="login-input"
+              type="email" 
+              name="email"
+              placeholder="seu@email.com"
+              id="email" 
+              onchange="onChangeEmail()"
+              >
+              <div class="error" id="email-required-error">Email é obrigatório</div>
+              <div class="error" id="email-invalid-error">Email é inválido</div>
+            </div>
+            <div class="form-field">
+              <div>
+                <label>Senha</label>
+              </div>
+              <input 
+              class="login-input"
+              type="password" 
+              name="password" 
+              placeholder="Senha"
+              id="password" 
+              onchange="onChangePassword()"
+              >
+              <img 
+              class="see-password-img" 
+              src="./images/olho-fechado.svg"
+              id="see-password-img"
+              onclick="seePassword()"
+              >
+              <div class="error" id="password-required-error">Senha é obrigatória</div>
+            </div>
+            <div class="form-buttons">
+              <div>
+                <button
+                type="button" 
+                class="clear" 
+                id="recover-password-button" 
+                onclick="recoverPassword()" 
+                disabled
+                >
+                Recuperar senha</button>
+                </div>
+              <div>
+                <button 
+                type="button" 
+                class="solid" 
+                id="login-button" 
+                onclick="login()" 
+                disabled
+                >
+                Entrar</button>
+              </div>
+              <div>
+                <button 
+                type="button" 
+                class="outline"
+                id="botao-login" 
+                onclick="register()" 
+                >
+                Registrar</button>
+              </div>
+            </div>
+            
+          </form>
+    </dialog>
     
 </body>
 </html>
